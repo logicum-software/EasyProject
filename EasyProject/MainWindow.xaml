@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyProject"
         mc:Ignorable="d"
-        Title="EasyProject" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="EasyProject" Height="300" Width="485" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MinWidth="0.2">
     <Grid>
         
     </Grid>

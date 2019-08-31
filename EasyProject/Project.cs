@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace EasyProject
 {
     [Serializable]
-    class Task
+    class Project
     {
         private String strName { get; set; }
         private String strDescription { get; set; }
@@ -16,8 +16,9 @@ namespace EasyProject
         private DateTime datePlannedStart { get; set; }
         private DateTime datePlannedEnd { get; set; }
         private int iStatus { get; set; } //iStatus: 0 = pending, 1 = started, 2 = completed, 3 = canceled
+        private List<Task> Tasks { get; set; }
 
-        public Task()
+        public Project()
         {
             strName = "";
             strDescription = "";
@@ -26,10 +27,11 @@ namespace EasyProject
             datePlannedStart = DateTime.Now;
             datePlannedEnd = DateTime.Now + new TimeSpan(7, 0, 0, 0);
             iStatus = 0;
+            Tasks = new List<Task>();
         }
 
-        public Task(String name, String description, DateTime start, DateTime end, DateTime plannedstart,
-            DateTime plannedend, int status)
+        public Project(String name, String description, DateTime start, DateTime end, DateTime plannedstart,
+            DateTime plannedend, int status, List<Task> tasks)
         {
             strName = name;
             strDescription = description;
@@ -38,6 +40,7 @@ namespace EasyProject
             datePlannedStart = plannedstart;
             datePlannedEnd = plannedend;
             iStatus = status;
+            Tasks = tasks;
         }
     }
 }
