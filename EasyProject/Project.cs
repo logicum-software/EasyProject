@@ -17,6 +17,7 @@ namespace EasyProject
         private DateTime datePlannedEnd { get; set; }
         private int iStatus { get; set; } //iStatus: 0 = pending, 1 = started, 2 = completed, 3 = canceled
         private List<Task> Tasks { get; set; }
+        private List<Milestone> Milestones { get; set; }
 
         public Project()
         {
@@ -28,10 +29,11 @@ namespace EasyProject
             datePlannedEnd = DateTime.Now + new TimeSpan(7, 0, 0, 0);
             iStatus = 0;
             Tasks = new List<Task>();
+            Milestones = new List<Milestone>();
         }
 
         public Project(String name, String description, DateTime start, DateTime end, DateTime plannedstart,
-            DateTime plannedend, int status, List<Task> tasks)
+            DateTime plannedend, int status, List<Task> tasks, List<Milestone> milestones)
         {
             strName = name;
             strDescription = description;
@@ -41,6 +43,7 @@ namespace EasyProject
             datePlannedEnd = plannedend;
             iStatus = status;
             Tasks = tasks;
+            Milestones = milestones;
         }
     }
 }
