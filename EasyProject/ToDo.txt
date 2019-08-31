@@ -1,1 +1,1 @@
-﻿20190831 19:10 -> GUI von MainWindow erstellen
+﻿20190831 19:10 - GUI von MainWindow erstellen --> Erledigt
