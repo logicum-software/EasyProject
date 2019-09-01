@@ -5,22 +5,22 @@ namespace EasyProject
     [Serializable]
     class Milestone
     {
-        private String strName { get; set; }
-        private int iStatus { get; set; } //iStatus: 0 = pending, 1 = completed, 2 = canceled
-        private DateTime dateCompleted { get; set; }
+        private String Name { get; set; }
+        private int Status { get; set; } //iStatus: 0 = pending, 1 = completed, 2 = canceled
+        private DateTime Datecompleted { get; set; }
 
         public Milestone()
         {
-            strName = "";
-            iStatus = 0;
-            dateCompleted = DateTime.Now + new TimeSpan(7, 0, 0, 0);
+            Name = "";
+            Status = 0;
+            Datecompleted = DateTime.Now + new TimeSpan(7, 0, 0, 0);
         }
 
-        public Milestone(String name, int status, DateTime completed)
+        public Milestone(String tmpname, int tmpstatus, DateTime tmpcompleted)
         {
-            strName = name;
-            iStatus = status;
-            dateCompleted = completed;
+            Name = tmpname;
+            Status = tmpstatus;
+            Datecompleted = tmpcompleted;
         }
     }
 }

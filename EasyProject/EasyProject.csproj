@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppData.cs" />
     <Compile Include="Milestone.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Task.cs" />
