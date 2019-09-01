@@ -1,5 +1,5 @@
 ﻿20190831 22:26 - Serialisierung implementieren
 
-20190831 22:25 - Klasse AppData erstellen
+20190831 22:25 - Klasse AppData erstellen --> Erledigt
 
 20190831 19:10 - GUI von MainWindow erstellen --> Erledigt

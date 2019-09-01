@@ -16,8 +16,14 @@ namespace EasyProject
             InitializeComponent();
 
             appData = new AppData();
+            loadData();
 
-            //Daten einlesen aus Datei "udata.dat"
+            listBoxProjects.ItemsSource = appData.Projects;
+        }
+
+        private void loadData()
+        {
+            //Daten einlesen aus Datei appData.Filename
             IFormatter formatter = new BinaryFormatter();
             try
             {
@@ -30,7 +36,28 @@ namespace EasyProject
                 MessageBox.Show(e.Message, "Dateifehler", MessageBoxButton.OK);
                 //throw;
             }
-            //listBoxProjects.ItemsSource = appData
+        }
+
+        private void saveData()
+        {
+            FileStream fs = new FileStream("udata.dat", FileMode.Create);
+
+            // Construct a BinaryFormatter and use it to serialize the data to the stream.
+            BinaryFormatter formatter = new BinaryFormatter();
+            try
+            {
+                formatter.Serialize(fs, appData);
+            }
+            catch (SerializationException ec)
+            {
+                MessageBox.Show(ec.Message, "Speicherfehler", MessageBoxButton.OK);
+                //Console.WriteLine("Failed to serialize. Reason: " + ec.Message);
+                throw;
+            }
+            finally
+            {
+                fs.Close();
+            }
         }
     }
 }
