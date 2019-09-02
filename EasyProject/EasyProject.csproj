@@ -57,6 +57,9 @@
     </ApplicationDefinition>
     <Compile Include="AppData.cs" />
     <Compile Include="Milestone.cs" />
+    <Compile Include="NewProject_Assistent\NewProject.xaml.cs">
+      <DependentUpon>NewProject.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Project.cs" />
     <Compile Include="Task.cs" />
     <Page Include="MainWindow.xaml">
@@ -71,6 +74,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NewProject_Assistent\NewProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

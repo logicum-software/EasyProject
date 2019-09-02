@@ -59,5 +59,12 @@ namespace EasyProject
                 fs.Close();
             }
         }
+
+        private void ButtonNewProject_Click(object sender, RoutedEventArgs e)
+        {
+            NewProject_Assistent.NewProject dlgNewProject = new NewProject_Assistent.NewProject();
+
+            dlgNewProject.ShowDialog();
+        }
     }
 }

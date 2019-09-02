@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="EasyProject" Height="300" Width="485" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MinWidth="0.2">
     <Grid>
-        <Button x:Name="button" Content="Neues Projekt" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="buttonNewProject" Content="Neues Projekt" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="100" Click="ButtonNewProject_Click"/>
         <ListBox x:Name="listBoxProjects" Margin="123,33,39,31">
             <ListBox.ItemTemplate>
                 <DataTemplate>
