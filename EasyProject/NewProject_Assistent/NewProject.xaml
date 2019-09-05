@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyProject.NewProject_Assistent"
         mc:Ignorable="d"
-        Title="Neues Projekt" Height="186" Width="484" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Neues Projekt" Height="191" Width="303" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="204*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="135*"/>
             <RowDefinition Height="22*"/>
         </Grid.RowDefinitions>
-        <Frame x:Name="frame" Content="" Margin="0" Grid.RowSpan="2" NavigationUIVisibility="Visible" Width="480" Height="160" Source="/EasyProject;component/NewProject_Assistent/PageName.xaml"/>
+        <Label x:Name="label" Content="Bitte geben Sie einen Namen für das Projekt ein:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="270" Height="30" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBoxName" Height="23" Margin="15,45,15,0" TextWrapping="Wrap" Text="Projektname..." VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button x:Name="buttonNext" Content="Weiter" Grid.Column="1" Margin="0,0,10,10" Grid.RowSpan="2" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+        <Button x:Name="buttonCancel" Content="Abbrechen" HorizontalAlignment="Left" Margin="10,0,0,9" Width="75" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="20" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>

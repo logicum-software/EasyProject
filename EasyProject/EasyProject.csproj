@@ -60,9 +60,6 @@
     <Compile Include="NewProject_Assistent\NewProject.xaml.cs">
       <DependentUpon>NewProject.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewProject_Assistent\PageName.xaml.cs">
-      <DependentUpon>PageName.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Project.cs" />
     <Compile Include="Task.cs" />
     <Page Include="MainWindow.xaml">
@@ -78,10 +75,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NewProject_Assistent\NewProject.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="NewProject_Assistent\PageName.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

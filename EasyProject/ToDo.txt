@@ -1,4 +1,6 @@
-﻿20190831 22:26 - Serialisierung implementieren
+﻿20190905 13:08 - Assistent für Neues Projekt
+
+20190831 22:26 - Serialisierung implementieren
 
 20190831 22:25 - Klasse AppData erstellen --> Erledigt
 

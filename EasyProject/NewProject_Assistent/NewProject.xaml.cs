@@ -22,6 +22,9 @@ namespace EasyProject.NewProject_Assistent
         public NewProject()
         {
             InitializeComponent();
+
+            textBoxName.SelectAll();
+            textBoxName.Focus();
         }
     }
 }
