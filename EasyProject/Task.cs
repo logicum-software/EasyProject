@@ -5,13 +5,13 @@ namespace EasyProject
     [Serializable]
     class Task
     {
-        private String Name { get; set; }
-        private String Description { get; set; }
-        private DateTime Startdate { get; set; }
-        private DateTime Enddate { get; set; }
-        private DateTime Plannedstartdate { get; set; }
-        private DateTime Plannedenddate { get; set; }
-        private int Status { get; set; } //iStatus: 0 = pending, 1 = started, 2 = completed, 3 = canceled
+        public String Name { get; set; }
+        public String Description { get; set; }
+        public DateTime Startdate { get; set; }
+        public DateTime Enddate { get; set; }
+        public DateTime Plannedstartdate { get; set; }
+        public DateTime Plannedenddate { get; set; }
+        public int Status { get; set; } //iStatus: 0 = pending, 1 = started, 2 = completed, 3 = canceled
 
         public Task()
         {

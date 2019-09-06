@@ -5,9 +5,9 @@ namespace EasyProject
     [Serializable]
     class Milestone
     {
-        private String Name { get; set; }
-        private int Status { get; set; } //iStatus: 0 = pending, 1 = completed, 2 = canceled
-        private DateTime Datecompleted { get; set; }
+        public String Name { get; set; }
+        public int Status { get; set; } //iStatus: 0 = pending, 1 = completed, 2 = canceled
+        public DateTime Datecompleted { get; set; }
 
         public Milestone()
         {

@@ -19,12 +19,32 @@ namespace EasyProject.NewProject_Assistent
     /// </summary>
     public partial class NewProject : Window
     {
+        private Project tmpProject;
         public NewProject()
         {
             InitializeComponent();
 
             textBoxName.SelectAll();
             textBoxName.Focus();
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Möchten Sie die Projekterstellung abbrechen?",
+                "Abbrechen", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                Close();
+            else
+            {
+                textBoxName.SelectAll();
+                textBoxName.Focus();
+            }
+        }
+
+        private void ButtonNext_Click(object sender, RoutedEventArgs e)
+        {
+            tmpProject = new Project();
+            tmpProject.Name = textBoxName.Text;
+
         }
     }
 }
