@@ -1,4 +1,4 @@
-﻿20190906 15:30 - Eigenschaften auf public stellen in Task und Milestone
+﻿20190906 15:30 - Eigenschaften auf public stellen in Task und Milestone --> Erledigt
 
 20190905 13:08 - Assistent für Neues Projekt
 

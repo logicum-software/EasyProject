@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace EasyProject.NewProject_Assistent
 {
@@ -42,8 +30,20 @@ namespace EasyProject.NewProject_Assistent
 
         private void ButtonNext_Click(object sender, RoutedEventArgs e)
         {
+            buttonNext.IsEnabled = false;
             tmpProject = new Project();
             tmpProject.Name = textBoxName.Text;
+
+            label1.Content = "Bitte geben Sie eine Projektbeschreibung ein:";
+            textBoxName.Text = "Bitte Projektbeschreibung eingeben...";
+            textBoxName.SelectAll();
+            textBoxName.Focus();
+        }
+
+        private void TextBoxName_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            if (IsInitialized)
+                buttonNext.IsEnabled = true;
         }
     }
 }
