@@ -44,7 +44,6 @@ namespace EasyProject.NewProject_Assistent
         {
             tmpProject = new Project();
             tmpProject.Name = textBoxName.Text;
-
         }
     }
 }
